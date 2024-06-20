@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.message__area{
+    height: 500px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding-top: 40px;
+    scrollbar-color: transparent transparent;
+}
+
+.message {
+    padding: 10px; 
+    border-radius: 7px; 
+    margin-bottom: 30px;
+    position: relative;
+    width: fit-content;
+}
+.incoming {
+    background: #8f8be8;
+    color: #fff;
+}
+.outgoing {
+    background: #e9eafd;
+    color: #787986;
+    margin-left: auto;
+}
+.message h4 {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    color: #333;
+    font-size: 14px;
+}
+@media screen and (max-width: 600px) {
+    .message__area{
+        padding: 16px;
+        height: 700px;
+    }
+}
